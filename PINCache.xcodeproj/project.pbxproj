@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37D753252574938D0004CD94 /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D75322257493180004CD94 /* PINOperation.framework */; };
 		6818C2881E55217D00875DB7 /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6818C2871E55217D00875DB7 /* PINOperation.framework */; };
 		687BB0AA1E52706B005D70C6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC0106CA1E28248800890935 /* Default-568h@2x.png */; };
 		68A0FC001E4D32C4000B552D /* PINCacheMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A0FBFF1E4D3282000B552D /* PINCacheMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,26 +27,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6818C2991E564C1100875DB7 /* PBXContainerItemProxy */ = {
+		37D75321257493180004CD94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6818C2901E564C1100875DB7 /* PINOperation.xcodeproj */;
+			containerPortal = 37D7531C257493180004CD94 /* PINOperation.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = CC01052D1E27110D00890935;
 			remoteInfo = PINOperation;
 		};
-		6818C29B1E564C1100875DB7 /* PBXContainerItemProxy */ = {
+		37D75323257493180004CD94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6818C2901E564C1100875DB7 /* PINOperation.xcodeproj */;
+			containerPortal = 37D7531C257493180004CD94 /* PINOperation.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = CC0105561E27116600890935;
 			remoteInfo = PINOperationTests;
-		};
-		6818C2A51E564C2000875DB7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6818C2901E564C1100875DB7 /* PINOperation.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = CC01052C1E27110D00890935;
-			remoteInfo = PINOperation;
 		};
 		CC0105E01E271A5C00890935 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -69,10 +63,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		37D7531C257493180004CD94 /* PINOperation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PINOperation.xcodeproj; path = Carthage/Checkouts/PINOperation/PINOperation.xcodeproj; sourceTree = "<group>"; };
 		6818C2871E55217D00875DB7 /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = "../../Library/Developer/Xcode/DerivedData/PINCache-cxjnintatqynfgceozwzgezmeypl/Build/Products/Debug-iphonesimulator/PINOperation.framework"; sourceTree = "<group>"; };
 		6818C2891E55218400875DB7 /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = "../../Library/Developer/Xcode/DerivedData/PINCache-cxjnintatqynfgceozwzgezmeypl/Build/Products/Debug-appletvsimulator/PINOperation.framework"; sourceTree = "<group>"; };
 		6818C28B1E55218A00875DB7 /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = Carthage/Checkouts/PINOperation/build/Debug/PINOperation.framework; sourceTree = "<group>"; };
-		6818C2901E564C1100875DB7 /* PINOperation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PINOperation.xcodeproj; path = Carthage/Checkouts/PINOperation/PINOperation.xcodeproj; sourceTree = "<group>"; };
 		68A0FBFF1E4D3282000B552D /* PINCacheMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PINCacheMacros.h; sourceTree = "<group>"; };
 		6928EED21E4160EE00B5D975 /* PINCaching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PINCaching.h; sourceTree = "<group>"; };
 		C30EE1E9203717DE00D78CB9 /* NSDate+PINCacheTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+PINCacheTests.h"; sourceTree = "<group>"; };
@@ -100,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D753252574938D0004CD94 /* PINOperation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37D7531D257493180004CD94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37D75322257493180004CD94 /* PINOperation.framework */,
+				37D75324257493180004CD94 /* PINOperationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6818C2861E55217D00875DB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,19 +129,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6818C2911E564C1100875DB7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6818C29A1E564C1100875DB7 /* PINOperation.framework */,
-				6818C29C1E564C1100875DB7 /* PINOperationTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		CC0105A71E271A1600890935 = {
 			isa = PBXGroup;
 			children = (
-				6818C2901E564C1100875DB7 /* PINOperation.xcodeproj */,
+				37D7531C257493180004CD94 /* PINOperation.xcodeproj */,
 				CC0106031E271A9000890935 /* Source */,
 				CC01060C1E271A9000890935 /* Tests */,
 				CC0105B21E271A1600890935 /* Products */,
@@ -226,7 +221,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				6818C2A61E564C2000875DB7 /* PBXTargetDependency */,
 			);
 			name = PINCache;
 			productName = PINCache;
@@ -282,8 +276,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 6818C2911E564C1100875DB7 /* Products */;
-					ProjectRef = 6818C2901E564C1100875DB7 /* PINOperation.xcodeproj */;
+					ProductGroup = 37D7531D257493180004CD94 /* Products */;
+					ProjectRef = 37D7531C257493180004CD94 /* PINOperation.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -295,18 +289,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		6818C29A1E564C1100875DB7 /* PINOperation.framework */ = {
+		37D75322257493180004CD94 /* PINOperation.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = PINOperation.framework;
-			remoteRef = 6818C2991E564C1100875DB7 /* PBXContainerItemProxy */;
+			remoteRef = 37D75321257493180004CD94 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6818C29C1E564C1100875DB7 /* PINOperationTests.xctest */ = {
+		37D75324257493180004CD94 /* PINOperationTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = PINOperationTests.xctest;
-			remoteRef = 6818C29B1E564C1100875DB7 /* PBXContainerItemProxy */;
+			remoteRef = 37D75323257493180004CD94 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -353,11 +347,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6818C2A61E564C2000875DB7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PINOperation;
-			targetProxy = 6818C2A51E564C2000875DB7 /* PBXContainerItemProxy */;
-		};
 		CC0105E11E271A5C00890935 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CC0105B01E271A1600890935 /* PINCache */;
@@ -492,14 +481,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINCache;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = libs.pincache;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
@@ -516,14 +504,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINCache;
+				PRODUCT_BUNDLE_IDENTIFIER = libs.pincache;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
