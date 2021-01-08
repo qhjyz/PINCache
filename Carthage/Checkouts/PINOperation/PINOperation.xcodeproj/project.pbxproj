@@ -3,17 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CC01055B1E27116600890935 /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC01052D1E27110D00890935 /* PINOperation.framework */; };
 		CC0105871E2711B700890935 /* PINOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105801E2711B700890935 /* PINOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC01058A1E2711B700890935 /* PINOperationGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105811E2711B700890935 /* PINOperationGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC01058D1E2711B700890935 /* PINOperationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0105821E2711B700890935 /* PINOperationGroup.m */; };
+		CC01058D1E2711B700890935 /* PINOperationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0105821E2711B700890935 /* PINOperationGroup.m */; platformFilter = ios; };
 		CC0105901E2711B700890935 /* PINOperationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105831E2711B700890935 /* PINOperationMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC0105931E2711B700890935 /* PINOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105841E2711B700890935 /* PINOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC0105961E2711B700890935 /* PINOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0105851E2711B700890935 /* PINOperationQueue.m */; };
+		CC0105961E2711B700890935 /* PINOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0105851E2711B700890935 /* PINOperationQueue.m */; platformFilter = ios; };
 		CC0105991E2711B700890935 /* PINOperationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0105861E2711B700890935 /* PINOperationTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC0105A01E27131B00890935 /* PINOperationQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC01059D1E27131B00890935 /* PINOperationQueueTests.m */; };
 		CC0105A41E27131B00890935 /* PINOperationGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC01059E1E27131B00890935 /* PINOperationGroupTests.m */; };
@@ -373,7 +373,12 @@
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = libs.PINOperation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -392,7 +397,11 @@
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = libs.PINOperation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -403,7 +412,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINOperationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -413,7 +426,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINOperationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
